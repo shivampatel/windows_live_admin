@@ -1,8 +1,8 @@
 .bindle
 *.log
 nohup.out
-.idea/*
 .idea
 *.*~
 .DS_Store
 ._*
+doc
