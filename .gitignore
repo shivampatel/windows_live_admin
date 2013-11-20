@@ -1,9 +1,11 @@
-.bindle
 *.log
-nohup.out
-.idea
+*.gem
 *.*~
-.DS_Store
 ._*
-doc
+.bindle
+.idea
 .yardoc
+.DS_Store
+doc
+nohup.out
+Gemfile.lock
