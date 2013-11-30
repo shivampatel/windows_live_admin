@@ -108,9 +108,9 @@ class WindowsLiveAdmin
     error = is_error?(response.body) # if response is an error xml, error string describes the error
 
     if error # Response XML had in error node called ErrorDescription
-      return ["false", error]
+      return [false, error]
     else                 # Absence of ErrorDescription node is taken as success
-      return ["true", "Member #{first_name} #{last_name} (#{member_name}) successfully created."]
+      return [true, "Member #{first_name} #{last_name} (#{member_name}) successfully created."]
     end
 
   end # end method create_member
@@ -130,9 +130,9 @@ class WindowsLiveAdmin
     error = is_error?(response.body) # if response is an error, error is a string describing the error
 
     if error # Response XML had in error node called ErrorDescription
-      return ["false", error]
+      return [false, error]
     else                 # Absence of ErrorDescription node is taken as success
-      return ["true", "Member #{member_name} successfully deleted."]
+      return [true, "Member #{member_name} successfully deleted."]
     end
 
   end # end method create_member
